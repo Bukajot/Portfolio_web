@@ -1,21 +1,14 @@
-// !!!DO NAUCZENIA !!!
+const btn_Features = document.querySelector("#link2");
+const Features = document.querySelector(".features");
+const btn_Pricing = document.querySelector("#link3");
+const Pricing = document.querySelector(".pricing");
 
-// // function scrolltoelement(elementSelector, instance = 0) {
-// //     const element = document.querySelectorAll(elementSelector);
-// //     if(element.length > instance){
-// //         element[instance].scrollIntoView({behavior: "smooth"});
-// //     }
-// // }
-// // const link1 = document.getElementbyId("link1");
-// // const link2 = document.getElementbyId("link2");
-// // const link3 = document.getElementbyId("link3");
+function scrollToFeatures() {
+  Features.scrollIntoView({ behavior: "smooth" });
+}
+btn_Features.addEventListener("click", scrollToFeatures);
 
-// // link1.addEventListener("click", () => {
-// //     scrolltoelement(".header", null)
-// // });
-// // link2.addEventListener("click", () => {
-// //     scrolltoelement(".header", null)
-// // });
-// // link3.addEventListener("click", () => {
-// //     scrolltoelement(".column", null)
-// // });
+function scrollToPricing() {
+  Pricing.scrollIntoView({ behavior: "smooth" });
+}
+btn_Pricing.addEventListener("click", scrollToPricing);
